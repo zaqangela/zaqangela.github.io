@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Garden</title>
+        <link rel="shortcut icon"href="ff1.png">
+        <meta charset="UTF-8"/>
+        <style>
+
+#div4{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    left: 100px;
+    top: 0px;
+    font-size: 100px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: 1;
+    z-index: 12
+}
+
+#div5{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    left: 100px;
+    top: 100px;
+    font-size: 100px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: 1;
+    z-index: 12
+}
+#div1{
+    position: absolute;
+    color: rgba(241, 183, 205, 0.642);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 100px;
+    top: 0px;
+    font-size: 300px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+    z-index: 11
+}
+#div11{
+    position: absolute;
+    color: rgba(248, 149, 50, 0.642);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 300px;
+    top: 200px;
+    font-size: 300px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+}
+#div12{
+    position: absolute;
+    color: rgba(255, 243, 108, 0.642);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 500px;
+    top: 400px;
+    font-size: 300px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+}
+
+
+#div13{
+    position: absolute;
+    color: rgba(96, 253, 111, 0.642);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 700px;
+    top: 600px;
+    font-size: 300px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+}
+
+#div2{
+    position: absolute;
+    border: 60px dotted rgb(117, 36, 55);
+    width: 500px;
+    left: 800px;
+    top: 1000px;
+    font-size: 900px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+#div3{
+    position: absolute;
+    background-color: rgb(33, 86, 33);
+    border: 30px solid rgb(53, 30, 35);
+    width: 500px;
+    height: 200px;
+    left: 50px;
+    top: 700px;
+    font-size: 900px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .5;
+}
+
+#div10 {
+ position: absolute;
+ background-color: rgb(230, 105, 165);
+ width: 600px;
+ height: 100px;
+ left:20px;
+ top: 10px;
+ text-align: right;
+ transition: border-radius 2s ease-out;
+}
+          
+#div10:link {
+text-decoration: none;
+z-index:100;
+}
+
+#div10:visited {
+text-decoration: none;
+z-index:100;
+}  
+
+#div10:hover{
+font-size: 12vw;
+border-radius: 200px 200px 200px 200px;
+letter-spacing: 2vw;
+}
+
+#div10:active {
+color: rgb(64, 191, 123);
+}
+
+#flower{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2000px;
+    opacity: .7;
+}
+#f2{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    border-radius: 0px 0px 80px 80px;
+    opacity: 1;
+    transition: height 1s ease-in;
+    height: 15vh;
+ z-index: 13;
+}
+
+#f2:hover {
+ height: 40vh;
+  }
+
+#f3{
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    width: 100px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+}
+#f31{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 100px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+}
+#f32{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 100px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+}
+#f33{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 100px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+}
+#f34{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width: 100px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+}
+#f4{
+    position: absolute;
+    top: 500px;
+    right: 0px;
+    width: 400px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: .5;
+}
+#f5{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 500px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: .5;
+}
+#f6{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 500px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: .5;
+}
+#f7{
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    width: 550px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    z-index: 9;
+}
+#f8{
+    position: fixed;
+    top: 0px;
+    right: -400px;
+    width: 800px;
+    opacity: .5;
+}
+#f9{
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    width: 500px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: .8;
+}
+
+#v1{
+    position: absolute;
+    top: 51vh;
+    left: 0vw;
+    width: 35vw;
+    z-index: 10;
+    border-radius: 10px 10px 10px 10px;
+}
+#div4:link{
+    color: black;
+    text-decoration: none;
+}
+#div4:visited{
+    color: green;
+    text-decoration: none;
+}
+#div4:hover{
+    color: rgb(181, 103, 103);
+    font-style: italic;
+}
+#div4:active {
+    color: blue;
+}
+
+#div5:link{
+    color: black;
+    text-decoration: none;
+}
+#div5:visited{
+    color: green;
+    text-decoration: none;
+}
+#div5:hover{
+    color: red;
+    font-style: italic;
+}
+#div5:active {
+    color: blue;
+}
+
+
+#f7:link{
+    color: black;
+    text-decoration: none;
+}
+#f7:visited{
+    color: green;
+    text-decoration: none;
+}
+
+#f7:active {
+    color: blue;
+}
+.picture{
+   transition: background-color 3s;
+}
+
+ .picture:hover {
+ filter: invert(100%);
+ background-color: rgb(244, 183, 139);
+}
+
+
+#div1 {
+ transition: border-right 3s;
+ }
+
+#div1:hover {
+  font-family: 'Courier New', monospace;;
+  border-right: 3vw rgb(63, 226, 139) dashed;
+ }
+
+
+#div1{
+ text-shadow: 1vh 1vh 3vh rgb(171, 128, 158);
+}
+
+
+#div1:hover {
+ font-family: 'Courier New', monospace;;
+ letter-spacing: -9vw;
+ border-right: 3vw red dashed;
+ width: 100vw;
+}
+
+#div1 {
+ transition: letter-spacing 6s;
+}
+
+.ow {
+ text-shadow: 1vh 1vh 3vh orange;
+ }
+body{
+    background-color: black;
+    white-space: pre;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+position: absolute;
+font-size: 12vmax;
+top: 50px;;
+right:200px;
+z-index:5;
+line-height: 9vw;
+font-style: 'Courier New', monospace;
+color:rgba(177, 75, 75, 0.742);
+font-family: 'Courier New', monospace;
+height: 600px;
+}
+
+#section2 {
+position: absolute;
+font-size: 5vmax;
+top: 50px;;
+right:0px;
+z-index:5;
+line-height: 9vw;
+font-style: 'Courier New', monospace;
+color:rgba(227, 195, 195, 0.742);
+font-family: 'Courier New', monospace;
+height: 600px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <a href="https://inhabitat.com/best-cut-flower-varieties-for-a-sustainable-home-garden/"><div id="div4">open it</div></a> 
+        <img id="flower" src="flower.jpg">
+        <img id="f2" src="f2.gif">
+        <img id="f3" src="f3.gif">
+        <img class="picture" id="f4" src="f4.gif">
+        <img class="picture" id="f5" src="f5.gif">
+        <img class="picture" id="f6" src="f6.gif">
+        <a href="https://inhabitat.com/lifestyle/gardening/"><img class="picture" id="f7" src="f7.gif"></a>
+        <img class="picture" id="f8" src="f8.gif">
+        <img class="picture"id="f9" src="f9.gif">
+        <img id="f31" src="f31.gif">
+        <img id="f32" src="f32.gif">
+        <img id="f33" src="f33.gif">
+        <img id="f34" src="f34.gif">
+        <div id="div1">garden</div>
+        <div id="div11">garden</div>
+        <div id="div12">garden</div>
+        <div id="div13">garden</div>
+        <div id="div14">garden</div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div10"></div>
+        <div id="m1"></a></div>
+        <div class="main" id="section1">
+        <p>Click me"</p>
+        <a href="#section2">Click me</a></div> 
+        <div class="main" id="section2">
+        <a href="#section1">Click me</a></div>
+        <video loop controls id="v1"src="v1.mp4"  
+       
+        
+        
+    </body>
+    </html>
+
+<!--image source
+    v1:https://b23.tv/nnDn6j0 
+    https://inhabitat.com/lifestyle/gardening/
+    https://inhabitat.com/best-cut-flower-varieties-for-a-sustainable-home-garden/
+ -->

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>Doorknob</title>
+        <link rel="shortcut icon"href="doorknob.gif">
+        <meta charset="UTF-8"/>
+<style>
+    
+#door2{
+position: absolute;
+width: 600px;
+left: 100px;
+top: 0px;
+opacity: 1;
+z-index: 12
+}
+
+#question{
+position: absolute;
+color: rgb(151, 171, 115);
+width: 900px;
+right: 0px;
+top: 200px;
+font-size: 65px;
+font-family: "Sixtyfour", sans-serif;
+text-align: center;
+opacity: 1;
+z-index: 12
+}
+
+
+[type]:hover{
+    background-color: rgb(159, 159, 160);
+}
+[type]{
+    top: 200px;
+    right: 200px;
+}
+
+
+.form-container input {
+    margin-top: 500px; 
+    margin-left: 900px;
+    height: 50px; 
+    width: 500px; 
+    border: 2px solid #789e82;  
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<img id="door2" src="door2.gif">
+<div id="question">What problems do you have?</div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+
+<div class="form-container">
+    <input type="text" id="userInput" placeholder="Please enter your answer">
+    <button onclick="redirectToNextPage()">Submit</button>
+</div>
+
+
+
+<script>
+   function redirectToNextPage() {
+    window.location.href = 'doorknob2.html'; 
+}
+
+
+</script>
+</body>
+</html>
+</html>

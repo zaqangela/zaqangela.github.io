@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<title>Broken world</title>
+<link rel="shortcut icon"href="11.gif">
+<meta charset="UTF-8"/>
+<style>
+
+body {
+cursor: vertical-text;
+}
+#crystalBall {
+cursor:help;
+}
+#all{
+position: absolute;
+color: rgb(196, 58, 58);
+width: 500px;
+left: 500px;
+top: 0px;
+font-size: 100px;
+font-family: 'Courier New', monospace;
+text-align: center;
+opacity: 1;
+z-index: 12
+}
+.crystal-ball-container {
+width: 1000px; /* Adjust size as needed */
+height: 1000px; /* Adjust size as needed */
+position: relative;
+overflow: hidden;
+top: 0px;
+left: 300px;
+}
+#div1{
+  position: absolute;
+    color: rgb(255, 255, 0);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 0px;
+    top: 200px;
+    font-size: 280px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+    z-index: 11
+}
+#c1:hover {
+  font-family: 'Courier New', monospace;;
+  border-right: 3vw rgb(63, 226, 139) dashed;
+ }
+
+
+.crystal-ball-container img {
+    width: 1000px;
+    height: 1000px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.crystal-ball-container:hover img {
+    opacity: 0;
+    transform: scale(0.1) rotate(90deg);
+}
+
+#all{
+  position: absolute;
+    color: rgb(255, 255, 0);
+    text-shadow: -20px 15px 10px rgb(67, 63, 63);
+    width: 800px;
+    left: 0px;
+    top: 100px;
+    font-size: 280px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    opacity: .9;
+    z-index: 27
+}
+
+#f8{
+    position: fixed;
+    top: 0px;
+    right: -400px;
+    width: 800px;
+    opacity: .5;
+    z-index: 28;
+}
+#f9{
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    width: 800px;
+    opacity: .5;
+    z-index: 28;
+}
+
+
+
+@keyframes change-color{
+  0% {background-color: rgb(240, 234, 157);}
+  20% {background-color: rgb(180, 125, 125);}
+  40% {background-color: #f8319f;}
+  60% {background-color: rgb(99, 243, 243);}
+  80% {background-color: rgb(93, 225, 113);}
+  100% {background-color: rgb(234, 144, 207);}
+  }
+.box{
+  background-color: black;
+  height: 1000px;
+  width:1800px
+}
+.box{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+.box-animation{
+  animation-name: change-color;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+#f22{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2000px;
+    height: 1200px;
+    opacity: .7;
+    z-index: 1;
+}
+#f55{
+    position: absolute;
+    top: 800px;
+    left: 200px;
+    width: 300px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 0.5;
+    z-index: 2;
+}
+#f99{
+    position: absolute;
+    top: 700px;
+    right: 200px;
+    width: 300px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 0.8;
+    z-index: 5;
+}
+#f88{
+    position: absolute;
+    top: 100px;
+    left:  0px;
+    width: 500px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 0.9;
+    z-index: 5;
+}
+#f11{
+  position: absolute;
+    top: 50px;
+    left:  300px;
+    width: 1000px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+</style>
+</head>
+<body>
+  <img id="f22" src="66.jpg">
+  <img id="f55" src="55.png">
+  <img id="f99" src="99.png">
+  <img id="f88" src="88.png">
+  <img id="f8" src="44.gif">
+  <img id="f9" src="44.gif">
+  <img id="f11" src="22.gif">
+  <div class="box box-animation"></div>
+  <div class="crystal-ball-container" id="crystalBall">
+  <img src="11.gif" alt="crystalBall">
+  <img src="22.gif" alt="22">
+  <img src="33.gif" id="xx">
+  <div id="div1">Broken world</div>
+  <div id="all"></div><a href="garden.html"><span class="text" id="t1">Camellia,</span></a> genus of evergreen shrubs or small trees in the Camellia family. Leaves thickly leathery, elliptic, apex slightly acute, base broadly cuneate, margin serrate; Petals are bowl-shaped; The fruit is spherical in shape. Camellia has no obvious dormant period throughout the year, and the flowering period is longer, from October to May of the next year, and the full flowering period is in January to March. Camellia, because its leaves like tea, so named camellia, Ming Dynasty Li Shizhen also said its leaf tea, and can be used as tea drink, so tea name</span></a>
+</div>
+
+  
+  <!-- 接下来是JavaScript -->
+  <script>
+      let wINdo = [ "Flying camellia", "Peonies that love to laugh" , "ManEating bees", "The leaves fall", "Earth blossoms", "luxuriant vegetation", "Butterfly swimming", "Chinese peony", "Sleeping carnation"]
+  let allcolors = ["blue", "green", "yellow", "red", "black", "white", "pink", "purple", "navy", "orange", "turquoise"]
+  window.onload = function() {
+  document.getElementById("t1").innerHTML = wINdo[Math.floor(Math.random() * wINdo.length)];
+  }
+  document.getElementById("all").onclick = function() {
+  document.getElementById("t1").innerHTML = wINdo[Math.floor(Math.random() * wINdo.length)];};
+
+  document.getElementById("crystalBall").onclick = function () {
+  document.getElementById("22").style.display = "block";
+  }
+
+
+  document.getElementById("crystalBall").onmouseenter = function() {
+  this.style.backgroundImage = "url('22.gif')";
+  this.style.opacity = ".6";
+  document.getElementById("xx").style.color = "blue";
+  this.style.backgroundColor = allcolors[Math.floor(Math.random() * wINdo.length)];
+  document.getElementById("xx").style.border = "blue dotted 60px";
+  document.getElementById("xx").style.backgroundImage = "url('22.gif'), url('22.gif')";
+  };
+
+  document.getElementById("crystalBall").onmouseleave = function() {
+  this.style.backgroundImage = "none";
+  this.style.opacity = "1";
+  document.getElementById("xx").style.color = "black";
+  this.style.backgroundColor = allcolors[Math.floor(Math.random() * wINdo.length)];
+  document.getElementById("xx").style.border = "white dashed 60px";
+  document.getElementById("xx").style.backgroundImage = "conic-gradient(green, red, yellow, red, yellow, green)";
+  };
+
+
+document.getElementById('crystalBall').addEventListener('mouseover', function() {
+    // This code will run when the mouse hovers over the crystal ball
+    // You can add more complex logic here to handle the shatter animation
+    // For example, dynamically create image fragments and animate them away from the center
+});
+</script>
+</body>
+</html>

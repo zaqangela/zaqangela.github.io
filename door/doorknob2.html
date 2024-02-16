@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+background-color: #f2f2f2; 
+color: #333; 
+}
+#randomText {
+font-size: 80px;
+text-align: center;
+margin-top: 150px;
+color: rgb(151, 171, 115);
+font-family: "Sixtyfour", sans-serif;
+font-weight: bold;
+text-shadow: 2px 2px 4px #aaa;
+}
+
+</style>
+</head>
+<body>
+<div id="randomText"></div>
+
+<!-- 接下来是JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var texts = [
+"Do not give up, do not despair, do not deny yourself, out of internal friction, to the future！",
+"Your feelings are important, don't be afraid to express yourself, I'm always ready to listen.",
+"Although I don't fully understand how you feel, I will try to understand and support you.！",
+"No matter what your mood or state, you are worthy of care and love.",
+"Please be sure, again and again, again and again, three times and not exhausted, thousands of times without hesitation to save themselves in the human world"
+];
+
+var randomIndex = Math.floor(Math.random() * texts.length); // 生成一个随机索引
+var randomText = texts[randomIndex]; // 根据随机索引选择一个文本
+
+document.getElementById('randomText').innerText = randomText; // 将选中的文本显示在页面上
+});
+</script>
+</body>
+</html>
